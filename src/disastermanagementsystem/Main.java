@@ -1,16 +1,8 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
 package disastermanagementsystem;
 
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
 
-/**
- *
- * @author Oj
- */
 public class Main {
 
     /**
@@ -25,7 +17,7 @@ public class Main {
 
         }
         
-        View v = new View();
+        Login v = new Login();
         v.setVisible(true);
     }
     

@@ -12,7 +12,7 @@ package disastermanagementsystem;
 public class Admin extends javax.swing.JFrame {
 
     /**
-     * Creates new form Admin
+     * Creates new form
      */
     @SuppressWarnings("OverridableMethodCallInConstructor")
     public Admin() {
@@ -31,25 +31,220 @@ public class Admin extends javax.swing.JFrame {
     private void initComponents() {
 
         jDesktopPane1 = new javax.swing.JDesktopPane();
-        jTextField1 = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
+        jPanel1 = new javax.swing.JPanel();
+        jPanel2 = new javax.swing.JPanel();
+        start_at_marine_btn = new javax.swing.JRadioButton();
+        start_at_lowlands_btn = new javax.swing.JRadioButton();
+        start_at_treddsgarden_btn = new javax.swing.JRadioButton();
+        start_at_ndagani_btn = new javax.swing.JRadioButton();
+        start_at_chukatown_btn = new javax.swing.JRadioButton();
+        start_at_meru_btn = new javax.swing.JRadioButton();
+        start_at_embu_btn = new javax.swing.JRadioButton();
+        start_at_kathigiririni_btn = new javax.swing.JRadioButton();
+        start_at_slaughter_btn = new javax.swing.JRadioButton();
+        start_at_kibumbu_btn = new javax.swing.JRadioButton();
+        jPanel4 = new javax.swing.JPanel();
+        start_at_marine_btn1 = new javax.swing.JRadioButton();
+        start_at_lowlands_btn1 = new javax.swing.JRadioButton();
+        start_at_treddsgarden_btn1 = new javax.swing.JRadioButton();
+        start_at_ndagani_btn1 = new javax.swing.JRadioButton();
+        start_at_chukatown_btn1 = new javax.swing.JRadioButton();
+        start_at_meru_btn1 = new javax.swing.JRadioButton();
+        start_at_embu_btn1 = new javax.swing.JRadioButton();
+        start_at_kathigiririni_btn1 = new javax.swing.JRadioButton();
+        start_at_slaughter_btn1 = new javax.swing.JRadioButton();
+        start_at_kibumbu_btn1 = new javax.swing.JRadioButton();
+        jLabel2 = new javax.swing.JLabel();
+        jTextField2 = new javax.swing.JTextField();
+        jButton2 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(java.awt.Color.darkGray);
         setType(java.awt.Window.Type.POPUP);
 
-        jTextField1.setInheritsPopupMenu(true);
-        jTextField1.setMargin(new java.awt.Insets(2, 10, 2, 2));
-
         jButton1.setFont(new java.awt.Font("Microsoft YaHei Light", 0, 11)); // NOI18N
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/disastermanagementsystem/search-location.png"))); // NOI18N
-        jButton1.setText("Search location");
+        jButton1.setText("Find shortest route");
         jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jButton1.setIconTextGap(5);
 
-        jDesktopPane1.setLayer(jTextField1, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jPanel1.setBackground(new java.awt.Color(101, 101, 101));
+
+        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder("Start Points"));
+
+        start_at_marine_btn.setText("marine");
+
+        start_at_lowlands_btn.setText("lowlands");
+
+        start_at_treddsgarden_btn.setText("treddsgardens");
+
+        start_at_ndagani_btn.setText("ndagani");
+
+        start_at_chukatown_btn.setText("chukatown");
+
+        start_at_meru_btn.setText("meru");
+
+        start_at_embu_btn.setText("embu");
+
+        start_at_kathigiririni_btn.setText("kathigiririni");
+
+        start_at_slaughter_btn.setText("slaughter");
+
+        start_at_kibumbu_btn.setText("kibumbu");
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(start_at_marine_btn)
+                    .addComponent(start_at_lowlands_btn)
+                    .addComponent(start_at_treddsgarden_btn)
+                    .addComponent(start_at_ndagani_btn)
+                    .addComponent(start_at_chukatown_btn)
+                    .addComponent(start_at_meru_btn)
+                    .addComponent(start_at_embu_btn)
+                    .addComponent(start_at_kathigiririni_btn)
+                    .addComponent(start_at_slaughter_btn)
+                    .addComponent(start_at_kibumbu_btn))
+                .addContainerGap(84, Short.MAX_VALUE))
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(start_at_marine_btn)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(start_at_lowlands_btn)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(start_at_ndagani_btn)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(start_at_treddsgarden_btn)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(start_at_chukatown_btn)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(start_at_kibumbu_btn)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(start_at_slaughter_btn)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(start_at_kathigiririni_btn)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(start_at_embu_btn)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(start_at_meru_btn)
+                .addContainerGap())
+        );
+
+        jPanel4.setBorder(javax.swing.BorderFactory.createTitledBorder("End Points"));
+
+        start_at_marine_btn1.setText("marine");
+
+        start_at_lowlands_btn1.setText("lowlands");
+
+        start_at_treddsgarden_btn1.setText("treddsgardens");
+
+        start_at_ndagani_btn1.setText("ndagani");
+
+        start_at_chukatown_btn1.setText("chukatown");
+
+        start_at_meru_btn1.setText("meru");
+
+        start_at_embu_btn1.setText("embu");
+
+        start_at_kathigiririni_btn1.setText("kathigiririni");
+
+        start_at_slaughter_btn1.setText("slaughter");
+
+        start_at_kibumbu_btn1.setText("kibumbu");
+
+        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
+        jPanel4.setLayout(jPanel4Layout);
+        jPanel4Layout.setHorizontalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(start_at_marine_btn1)
+                    .addComponent(start_at_lowlands_btn1)
+                    .addComponent(start_at_treddsgarden_btn1)
+                    .addComponent(start_at_ndagani_btn1)
+                    .addComponent(start_at_chukatown_btn1)
+                    .addComponent(start_at_meru_btn1)
+                    .addComponent(start_at_embu_btn1)
+                    .addComponent(start_at_kathigiririni_btn1)
+                    .addComponent(start_at_slaughter_btn1)
+                    .addComponent(start_at_kibumbu_btn1))
+                .addContainerGap(84, Short.MAX_VALUE))
+        );
+        jPanel4Layout.setVerticalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(start_at_marine_btn1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(start_at_lowlands_btn1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(start_at_ndagani_btn1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(start_at_treddsgarden_btn1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(start_at_chukatown_btn1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(start_at_kibumbu_btn1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(start_at_slaughter_btn1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(start_at_kathigiririni_btn1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(start_at_embu_btn1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(start_at_meru_btn1)
+                .addContainerGap())
+        );
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(7, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap())
+        );
+
+        jLabel2.setFont(new java.awt.Font("Anonymice Powerline", 0, 24)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(102, 153, 255));
+        jLabel2.setText("Choose start and end destinations");
+
+        jTextField2.setMargin(new java.awt.Insets(2, 15, 2, 6));
+
+        jButton2.setText("Go Back");
+        jButton2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton2MouseClicked(evt);
+            }
+        });
+
         jDesktopPane1.setLayer(jButton1, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jDesktopPane1.setLayer(jPanel1, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jDesktopPane1.setLayer(jLabel2, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jDesktopPane1.setLayer(jTextField2, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jDesktopPane1.setLayer(jButton2, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout jDesktopPane1Layout = new javax.swing.GroupLayout(jDesktopPane1);
         jDesktopPane1.setLayout(jDesktopPane1Layout);
@@ -57,21 +252,28 @@ public class Admin extends javax.swing.JFrame {
             jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jDesktopPane1Layout.createSequentialGroup()
                 .addContainerGap(100, Short.MAX_VALUE)
-                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 514, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(100, 100, 100))
-            .addGroup(jDesktopPane1Layout.createSequentialGroup()
-                .addGap(252, 252, 252)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jTextField2)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton2, javax.swing.GroupLayout.Alignment.TRAILING))
+                .addGap(211, 211, 211))
         );
         jDesktopPane1Layout.setVerticalGroup(
             jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jDesktopPane1Layout.createSequentialGroup()
-                .addGap(79, 79, 79)
-                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(36, 36, 36)
+                .addGap(67, 67, 67)
+                .addComponent(jLabel2)
+                .addGap(18, 18, 18)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(28, 28, 28)
                 .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jButton2)
+                .addContainerGap(30, Short.MAX_VALUE))
         );
 
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -82,19 +284,31 @@ public class Admin extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
                 .addComponent(jDesktopPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 500, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jDesktopPane1)
-            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 600, Short.MAX_VALUE)
+            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jDesktopPane1)
+                .addContainerGap())
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseClicked
+        
+        CRUD a = new CRUD();
+        a.setVisible(true);
+        
+        dispose();
+    }//GEN-LAST:event_jButton2MouseClicked
 
     /**
      * @param args the command line arguments
@@ -134,8 +348,33 @@ public class Admin extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JDesktopPane jDesktopPane1;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JTextField jTextField1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel4;
+    private javax.swing.JTextField jTextField2;
+    private javax.swing.JRadioButton start_at_chukatown_btn;
+    private javax.swing.JRadioButton start_at_chukatown_btn1;
+    private javax.swing.JRadioButton start_at_embu_btn;
+    private javax.swing.JRadioButton start_at_embu_btn1;
+    private javax.swing.JRadioButton start_at_kathigiririni_btn;
+    private javax.swing.JRadioButton start_at_kathigiririni_btn1;
+    private javax.swing.JRadioButton start_at_kibumbu_btn;
+    private javax.swing.JRadioButton start_at_kibumbu_btn1;
+    private javax.swing.JRadioButton start_at_lowlands_btn;
+    private javax.swing.JRadioButton start_at_lowlands_btn1;
+    private javax.swing.JRadioButton start_at_marine_btn;
+    private javax.swing.JRadioButton start_at_marine_btn1;
+    private javax.swing.JRadioButton start_at_meru_btn;
+    private javax.swing.JRadioButton start_at_meru_btn1;
+    private javax.swing.JRadioButton start_at_ndagani_btn;
+    private javax.swing.JRadioButton start_at_ndagani_btn1;
+    private javax.swing.JRadioButton start_at_slaughter_btn;
+    private javax.swing.JRadioButton start_at_slaughter_btn1;
+    private javax.swing.JRadioButton start_at_treddsgarden_btn;
+    private javax.swing.JRadioButton start_at_treddsgarden_btn1;
     // End of variables declaration//GEN-END:variables
 }

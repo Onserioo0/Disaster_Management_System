@@ -30,8 +30,9 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <Component id="jDesktopPane1" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
+              <Component id="jDesktopPane1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Component id="jLabel1" min="-2" pref="500" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
           </Group>
@@ -39,8 +40,12 @@
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="jDesktopPane1" max="32767" attributes="0"/>
-          <Component id="jLabel1" alignment="0" pref="600" max="32767" attributes="0"/>
+          <Component id="jLabel1" alignment="0" max="32767" attributes="0"/>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jDesktopPane1" max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
       </Group>
     </DimensionLayout>
   </Layout>
@@ -52,37 +57,36 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="1" attributes="0">
                   <EmptySpace pref="100" max="32767" attributes="0"/>
-                  <Component id="jTextField1" min="-2" pref="514" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="100" max="-2" attributes="0"/>
-              </Group>
-              <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace min="-2" pref="252" max="-2" attributes="0"/>
-                  <Component id="jButton1" min="-2" pref="210" max="-2" attributes="0"/>
-                  <EmptySpace max="32767" attributes="0"/>
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Component id="jLabel2" max="32767" attributes="0"/>
+                      <Component id="jButton1" alignment="0" max="32767" attributes="0"/>
+                      <Component id="jTextField2" alignment="0" max="32767" attributes="0"/>
+                      <Component id="jPanel1" max="32767" attributes="0"/>
+                      <Component id="jButton2" alignment="1" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="211" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace min="-2" pref="79" max="-2" attributes="0"/>
-                  <Component id="jTextField1" min="-2" pref="40" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="67" max="-2" attributes="0"/>
+                  <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
                   <Component id="jButton1" min="-2" pref="33" max="-2" attributes="0"/>
-                  <EmptySpace max="32767" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Component id="jTextField2" min="-2" pref="73" max="-2" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Component id="jButton2" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace pref="30" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JTextField" name="jTextField1">
-          <Properties>
-            <Property name="inheritsPopupMenu" type="boolean" value="true"/>
-            <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
-              <Insets value="[2, 10, 2, 2]"/>
-            </Property>
-          </Properties>
-        </Component>
         <Component class="javax.swing.JButton" name="jButton1">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -91,12 +95,295 @@
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/disastermanagementsystem/search-location.png"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Search location"/>
+            <Property name="text" type="java.lang.String" value="Find shortest route"/>
             <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
               <Color id="Default Cursor"/>
             </Property>
             <Property name="iconTextGap" type="int" value="5"/>
           </Properties>
+        </Component>
+        <Container class="javax.swing.JPanel" name="jPanel1">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="65" green="65" red="65" type="rgb"/>
+            </Property>
+          </Properties>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Component id="jPanel4" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace pref="7" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jPanel4" min="-2" max="-2" attributes="0"/>
+                          <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Container class="javax.swing.JPanel" name="jPanel2">
+              <Properties>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                    <TitledBorder title="Start Points"/>
+                  </Border>
+                </Property>
+              </Properties>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="start_at_marine_btn" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="start_at_lowlands_btn" min="-2" max="-2" attributes="0"/>
+                              <Component id="start_at_treddsgarden_btn" min="-2" max="-2" attributes="0"/>
+                              <Component id="start_at_ndagani_btn" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="start_at_chukatown_btn" min="-2" max="-2" attributes="0"/>
+                              <Component id="start_at_meru_btn" min="-2" max="-2" attributes="0"/>
+                              <Component id="start_at_embu_btn" min="-2" max="-2" attributes="0"/>
+                              <Component id="start_at_kathigiririni_btn" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="start_at_slaughter_btn" min="-2" max="-2" attributes="0"/>
+                              <Component id="start_at_kibumbu_btn" alignment="0" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace pref="84" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="1" attributes="0">
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Component id="start_at_marine_btn" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="start_at_lowlands_btn" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="start_at_ndagani_btn" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="start_at_treddsgarden_btn" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="start_at_chukatown_btn" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="start_at_kibumbu_btn" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="start_at_slaughter_btn" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="start_at_kathigiririni_btn" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="start_at_embu_btn" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="start_at_meru_btn" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Component class="javax.swing.JRadioButton" name="start_at_marine_btn">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="marine"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JRadioButton" name="start_at_lowlands_btn">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="lowlands"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JRadioButton" name="start_at_treddsgarden_btn">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="treddsgardens"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JRadioButton" name="start_at_ndagani_btn">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="ndagani"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JRadioButton" name="start_at_chukatown_btn">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="chukatown"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JRadioButton" name="start_at_meru_btn">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="meru"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JRadioButton" name="start_at_embu_btn">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="embu"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JRadioButton" name="start_at_kathigiririni_btn">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="kathigiririni"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JRadioButton" name="start_at_slaughter_btn">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="slaughter"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JRadioButton" name="start_at_kibumbu_btn">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="kibumbu"/>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Container class="javax.swing.JPanel" name="jPanel4">
+              <Properties>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+                    <TitledBorder title="End Points"/>
+                  </Border>
+                </Property>
+              </Properties>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="start_at_marine_btn1" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="start_at_lowlands_btn1" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="start_at_treddsgarden_btn1" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="start_at_ndagani_btn1" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="start_at_chukatown_btn1" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="start_at_meru_btn1" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="start_at_embu_btn1" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="start_at_kathigiririni_btn1" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="start_at_slaughter_btn1" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="start_at_kibumbu_btn1" alignment="0" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace pref="84" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="1" attributes="0">
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Component id="start_at_marine_btn1" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="start_at_lowlands_btn1" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="start_at_ndagani_btn1" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="start_at_treddsgarden_btn1" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="start_at_chukatown_btn1" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="start_at_kibumbu_btn1" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="start_at_slaughter_btn1" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="start_at_kathigiririni_btn1" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="start_at_embu_btn1" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="start_at_meru_btn1" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Component class="javax.swing.JRadioButton" name="start_at_marine_btn1">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="marine"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JRadioButton" name="start_at_lowlands_btn1">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="lowlands"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JRadioButton" name="start_at_treddsgarden_btn1">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="treddsgardens"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JRadioButton" name="start_at_ndagani_btn1">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="ndagani"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JRadioButton" name="start_at_chukatown_btn1">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="chukatown"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JRadioButton" name="start_at_meru_btn1">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="meru"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JRadioButton" name="start_at_embu_btn1">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="embu"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JRadioButton" name="start_at_kathigiririni_btn1">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="kathigiririni"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JRadioButton" name="start_at_slaughter_btn1">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="slaughter"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JRadioButton" name="start_at_kibumbu_btn1">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="kibumbu"/>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
+          </SubComponents>
+        </Container>
+        <Component class="javax.swing.JLabel" name="jLabel2">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Anonymice Powerline" size="24" style="0"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="99" red="66" type="rgb"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Choose start and end destinations"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="jTextField2">
+          <Properties>
+            <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
+              <Insets value="[2, 15, 2, 6]"/>
+            </Property>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton2">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Go Back"/>
+          </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jButton2MouseClicked"/>
+          </Events>
         </Component>
       </SubComponents>
     </Container>
