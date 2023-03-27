@@ -129,7 +129,7 @@ public class Report extends javax.swing.JFrame {
         jDesktopPane1Layout.setVerticalGroup(
             jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jDesktopPane1Layout.createSequentialGroup()
-                .addGap(128, 128, 128)
+                .addGap(50, 50, 50)
                 .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
                     .addComponent(reporter_name, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -212,7 +212,10 @@ public class Report extends javax.swing.JFrame {
     }//GEN-LAST:event_clear_buttonActionPerformed
 
     private void submit_buttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submit_buttonActionPerformed
-        
+
+try {
+    String insertReport = "INSERT INTO ";
+}   catch (Exception e){}    
         
     }//GEN-LAST:event_submit_buttonActionPerformed
 
