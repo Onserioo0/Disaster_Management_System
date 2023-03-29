@@ -207,7 +207,7 @@ public class Signup extends javax.swing.JFrame {
 
     private void signup_buttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_signup_buttonActionPerformed
 
-        String insertData = "INSERT INTO `admin` (admin_email, admin_name, admin_password, date)" + "VALUES (?,?,?,?)";
+        String insertData = "INSERT INTO `admin` (admin_email, admin_name, admin_password)" + "VALUES (?,?,?)";
 
         connect = (Connection) Database.connectDB();
 
@@ -232,10 +232,6 @@ public class Signup extends javax.swing.JFrame {
                     prepare.setString(2, reg_username.getText());
                     prepare.setString(3, reg_password.getText());
                     
-                    Date date = new Date();
-                    java.sql.Date sqlDate = new java.sql.Date(date.getTime());
-                    
-                    prepare.setString(4, String.valueOf(sqlDate));
 
                     prepare.executeUpdate();
 

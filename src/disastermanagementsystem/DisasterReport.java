@@ -221,6 +221,12 @@ public class DisasterReport extends javax.swing.JFrame {
 
     private void submit_buttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submit_buttonActionPerformed
 
+        CRUD a = new CRUD();
+        a.setVisible(true);
+        
+        dispose();
+        
+        /*
         String insertReport = "INSERT INTO `reports` (report_name, report_disaster_type, report_disaster_location, report_time)" + "VALUES (?,?,?,?)";
 
         connect = (Connection) Database.connectDB();
@@ -245,7 +251,7 @@ public class DisasterReport extends javax.swing.JFrame {
                     JOptionPane.showMessageDialog(this, "Report inserted successfully", "Information Message", JOptionPane.INFORMATION_MESSAGE);
 
                 }
-            } catch (HeadlessException | SQLException e){}    
+            } catch (HeadlessException | SQLException e){}    */
         
     }//GEN-LAST:event_submit_buttonActionPerformed
 

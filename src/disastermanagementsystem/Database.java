@@ -15,7 +15,7 @@ public class Database {
         
         try {
             
-            Class.forName("com.mysql.jdbc.Driver");
+            Class.forName("com.mysql.cj.jdbc.Driver");
             
             return DriverManager.getConnection("jdbc:mysql://localhost/rescueteam", "root", "");
             
