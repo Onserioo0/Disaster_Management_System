@@ -209,7 +209,7 @@ public class Signup extends javax.swing.JFrame {
 
         String insertData = "INSERT INTO `admin` (admin_email, admin_name, admin_password, date)" + "VALUES (?,?,?,?)";
 
-        connect = (Connection) database.connectDB();
+        connect = (Connection) Database.connectDB();
 
         try {
 
