@@ -1,8 +1,10 @@
 package disastermanagementsystem;
 
+import java.awt.HeadlessException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import javax.swing.JOptionPane;
 
 /**
@@ -79,9 +81,9 @@ public class Login extends javax.swing.JFrame {
         loginButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/disastermanagementsystem/login.png"))); // NOI18N
         loginButton.setToolTipText("");
         loginButton.setBorder(javax.swing.BorderFactory.createCompoundBorder());
-        loginButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                loginButtonActionPerformed(evt);
+        loginButton.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                loginButtonMouseClicked(evt);
             }
         });
 
@@ -198,11 +200,11 @@ public class Login extends javax.swing.JFrame {
         dispose();
     }//GEN-LAST:event_SignUpButtonMouseClicked
 
-    private void loginButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginButtonActionPerformed
+    private void loginButtonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_loginButtonMouseClicked
 
-        String selectData = "SELECT admin_name, admin_password FROM admin WHERE admin_name=? AND admin_password=?";
+        String selectData = "SELECT `admin_name`, `admin_password` FROM `admin` WHERE `admin_name`=`?` AND `admin_password`=`?`";
 
-        connect = database.connectDB();
+        connect = Database.connectDB();
 
         try {
 
@@ -210,17 +212,17 @@ public class Login extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(this, "Incorrect username or password", "Error Message", JOptionPane.ERROR_MESSAGE);
 
             } else {
-            }
+
             prepare = connect.prepareStatement(selectData);
             prepare.setString(1, login_username.getText());
             prepare.setString(2, login_password.getText());
             result = prepare.executeQuery();
-
+        }
             if (result.next()) {
 
                 JOptionPane.showMessageDialog(this, "Login successful", "Information Message", JOptionPane.INFORMATION_MESSAGE);
 
-                Report a = new Report();
+                DisasterReport a = new DisasterReport();
                 a.setVisible(true);
 
                 dispose();
@@ -230,11 +232,9 @@ public class Login extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(this, "Incorrect username or password", "Error Message", JOptionPane.ERROR_MESSAGE);
             }
 
-        } catch (Exception e) {
-            e.printStackTrace();
+        } catch (HeadlessException | SQLException e) {
         }
-
-    }//GEN-LAST:event_loginButtonActionPerformed
+    }//GEN-LAST:event_loginButtonMouseClicked
 
     /**
      * @param args the command line arguments
