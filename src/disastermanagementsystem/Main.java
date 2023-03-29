@@ -16,7 +16,7 @@ public class Main {
             // If Nimbus is not available, use the system's default Look and Feel
 
         }
-        
+
         Login v = new Login();
         v.setVisible(true);
     }
